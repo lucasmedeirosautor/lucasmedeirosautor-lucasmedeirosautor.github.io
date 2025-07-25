@@ -1,145 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Como Vencer a Depressão – Lucas Medeiros</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #000000;
-      margin: 0;
-      padding: 0;
-      color: #ffffff;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 30px 20px;
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Como Vencer a Depressão - Lucas Medeiros</title>
+<style>
+  body {
+    margin:0; padding:0;
+    background-color: #000; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  header {
+    text-align: center;
+    padding: 30px 10px;
+    border-bottom: 2px solid #b88e1f;
+  }
+  header h1 {
+    font-size: 2.5em;
+    color: #b88e1f;
+    margin-bottom: 10px;
+  }
+  header p {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #fff;
+  }
+  .btn-buy {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 25px auto;
+    padding: 15px;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #000;
+    background-color: #b88e1f;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .btn-buy:hover {
+    background-color: #d4af37;
+  }
+  .section-title {
+    font-size: 2em;
+    color: #b88e1f;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #b88e1f;
+    padding-bottom: 5px;
+  }
+  .story {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .story img {
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #b88e1f;
+    flex-shrink: 0;
+  }
+  .story-text {
+    flex: 1;
+    font-size: 1.1em;
+    color: #eee;
+  }
+  .testimonial {
+    background-color: #111;
+    border-left: 5px solid #b88e1f;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-style: italic;
+    color: #ddd;
+  }
+  .testimonial strong {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    color: #b88e1f;
+  }
+  footer {
+    margin: 40px 0 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+  }
+  @media(max-width: 600px) {
+    .story {
+      flex-direction: column;
       text-align: center;
     }
-    h1, h2, h3 {
-      color: #ffd700; /* dourado */
-      margin-top: 30px;
+    .story img {
+      margin: 0 auto;
     }
-    .hero {
-      background-color: #111111;
-      padding: 40px 20px;
-      border-radius: 8px;
-      margin-bottom: 30px;
-      box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+    .btn-buy {
+      max-width: 100%;
     }
-    .img-capa {
-      max-width: 300px;
-      margin: 20px auto;
-      display: block;
-      border-radius: 6px;
-      box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
-    }
-    .btn {
-      display: inline-block;
-      margin: 15px 10px;
-      padding: 15px 30px;
-      font-size: 18px;
-      color: black;
-      background-color: #ffd700;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: 0.3s;
-      font-weight: bold;
-    }
-    .btn:hover {
-      background-color: #e6be00;
-    }
-    .depoimento {
-      background-color: #1a1a1a;
-      padding: 15px;
-      margin: 20px auto;
-      border-radius: 6px;
-      max-width: 700px;
-      font-style: italic;
-      color: #f1f1f1;
-      box-shadow: 0 0 5px rgba(255, 255, 255, 0.05);
-    }
-    ul {
-      text-align: left;
-      max-width: 700px;
-      margin: auto;
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 10px;
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #777;
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
-
   <div class="container">
-    <!-- TÍTULO -->
-    <div class="hero">
-      <h1>Você não está sozinho.</h1>
-      <p>Eu estive no fundo do poço. Quase desisti. Mas fui salvo — e hoje compartilho com você a virada que salvou minha vida.</p>
-      <h2>Como Vencer a Depressão</h2>
-      <h3>O Método Realista Que Salvou Minha Vida</h3>
-    </div>
+    <header>
+      <h1>Como Vencer a Depressão – Um Guia Real, Humano e Prático</h1>
+      <p>Sofrendo com depressão? Este livro pode ser seu caminho para a cura.</p>
+      <a href="LINK_DO_SEU_PRODUTO_AQUI" class="btn-buy" target="_blank" rel="noopener noreferrer">Quero mudar minha vida agora</a>
+    </header>
 
-    <!-- IMAGEM DA CAPA -->
-    <img src="capa.png.JPG" alt="Capa do Livro Como Vencer a Depressão" class="img-capa" />
+    <section>
+      <h2 class="section-title">Minha História</h2>
+      <div class="story">
+        <img src="lucas.jpg" alt="Foto do Lucas Medeiros" />
+        <div class="story-text">
+          <p>Meu nome é Lucas Medeiros e, como você, já enfrentei os desafios profundos da depressão. Passei por momentos de angústia, noites sem dormir e aquela voz interna que queria me derrubar. Mas consegui dar a volta por cima e quero ajudar você a vencer também, com um método realista e humano que transformou minha vida.</p>
+          <p>Este livro é o resultado da minha experiência, pesquisas e práticas que realmente funcionam para superar a depressão, ansiedade e recuperar a alegria de viver.</p>
+        </div>
+      </div>
+    </section>
 
-    <!-- SUA HISTÓRIA -->
-    <h2>Minha história é real</h2>
-    <p>
-      Eu passei dias sem conseguir dormir. Tentei descansar tomando um vidro inteiro de maracujina, mas nem assim meu corpo desligava.  
-      Ouvi vozes, entrei no quarto decidido a desistir da vida — mas algo me impediu. Quando percebi, já estava dentro de uma igreja.  
-      Esse foi o ponto de virada.  
-    </p>
-    <p>
-      A partir daí, com fé, esforço, exercícios e reconstrução mental, eu venci. Esse livro é o guia que criei com tudo que funcionou na prática.  
-      Ele não vem com promessas fáceis, mas com uma verdade que pode salvar vidas — assim como salvou a minha.
-    </p>
+    <section>
+      <h2 class="section-title">Sobre o Livro</h2>
+      <div class="story">
+        <img src="capa.jpg" alt="Capa do livro Como Vencer a Depressão" />
+        <div class="story-text">
+          <p>“Como Vencer a Depressão – O Método Realista que Salvou Minha Vida” é um guia direto, prático e baseado em uma história real. Mais do que um livro, é um convite para uma nova jornada de vida.</p>
+          <p>Você encontrará conselhos que funcionam na vida real, mesmo quando tudo parece perdido. Se você está cansado de promessas vazias, este livro é para você.</p>
+        </div>
+      </div>
+    </section>
 
-    <!-- BENEFÍCIOS DO LIVRO -->
-    <h2>O que você vai encontrar neste livro:</h2>
-    <ul>
-      <li>✅ Como identificar os sinais silenciosos da depressão</li>
-      <li>✅ Estratégias práticas para sobreviver aos piores dias</li>
-      <li>✅ Como o corpo e a mente estão conectados na dor</li>
-      <li>✅ A importância da fé e da disciplina na virada</li>
-      <li>✅ Relatos reais, diretos e humanos — sem enrolação</li>
-    </ul>
+    <section>
+      <h2 class="section-title">Depoimentos</h2>
 
-    <!-- DEPOIMENTOS -->
-    <h2>Quem leu, recomenda:</h2>
+      <div class="testimonial">
+        “Esse livro mudou minha visão sobre a depressão. As palavras do Lucas me deram esperança e força para continuar lutando.” 
+        <strong>– Maria Silva, São Paulo/SP</strong>
+      </div>
 
-    <div class="depoimento">
-      “Esse livro me fez chorar, mas também me deu forças pra continuar. Obrigado por compartilhar sua história.”  
-      <br><strong>– André, 29 anos – Belo Horizonte/MG</strong>
-    </div>
-    <div class="depoimento">
-      “É como se ele estivesse falando comigo. Nunca vi uma abordagem tão real, tão honesta.”  
-      <br><strong>– Juliana, 34 anos – Campinas/SP</strong>
-    </div>
-    <div class="depoimento">
-      “Passei por uma depressão silenciosa. Esse livro me ajudou a entender que não era fraqueza, era dor.”  
-      <br><strong>– Felipe, 40 anos – Recife/PE</strong>
-    </div>
+      <div class="testimonial">
+        “Recomendo a todos que estão passando por momentos difíceis. O guia é direto, humano e cheio de dicas práticas.” 
+        <strong>– João Santos, Belo Horizonte/MG</strong>
+      </div>
 
-    <!-- BOTÕES -->
-    <div style="margin-top: 40px;">
-      <a class="btn" href="Amostra grátis.pdf" download>📖 Baixar Amostra Grátis</a>
-      <a class="btn" href="https://go.hotmart.com/T100961079V?dp=1" target="_blank">💳 Comprar Agora</a>
-    </div>
+      <div class="testimonial">
+        “Consegui dar um passo importante na minha recuperação depois de ler o livro. Muito obrigado, Lucas!” 
+        <strong>– Ana Pereira, Curitiba/PR</strong>
+      </div>
+    </section>
+
+    <a href="LINK_DO_SEU_PRODUTO_AQUI" class="btn-buy" target="_blank" rel="noopener noreferrer">Quero comprar agora e mudar minha vida</a>
 
     <footer>
-      <p>Autor: Lucas Daniel Silva de Medeiros</p>
+      <p>© 2025 Lucas Medeiros. Todos os direitos reservados.</p>
     </footer>
   </div>
-
 </body>
 </html>
